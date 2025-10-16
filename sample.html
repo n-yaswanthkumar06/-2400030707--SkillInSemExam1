@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KL Student Portfolio - Your Name</title>
+  <style>
+    /* Base Styling */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #273c75;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
+
+    main {
+      padding: 1rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    /* Projects Section using Flexbox */
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 1rem;
+      flex: 1 1 300px;
+      max-width: 350px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #273c75;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+
+      main {
+        padding: 1rem;
+      }
+
+      .projects {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <p>KL University Student | Web Developer | Tech Enthusiast</p>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm <strong>Your Name</strong>, a student at KL University passionate about technology, coding, and design. 
+        I enjoy building responsive websites and exploring new tools in the world of AI and web development.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>A responsive portfolio website built using HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="project-card">
+          <h3>Student Management System</h3>
+          <p>A Python-based project to manage student data efficiently.</p>
+        </div>
+        <div class="project-card">
+          <h3>AI Chatbot</h3>
+          <p>An intelligent chatbot built using Python and NLP libraries.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Your Name | KL University</p>
+  </footer>
+</body>
+</html>
